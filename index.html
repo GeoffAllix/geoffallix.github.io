@@ -123,6 +123,26 @@
       top: 50px; right: -50px;
     }
 
+    .hero-profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 2.5rem;
+      border: 3px solid rgba(58, 175, 175, 0.4); /* Teal light with opacity */
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      animation: fadeUp 0.8s 0.1s forwards;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 10;
+    }
+    .hero-profile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .hero-eyebrow {
       font-size: 0.72rem;
       font-weight: 500;
@@ -768,6 +788,11 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-left">
+      <!-- Profile Image Added Here -->
+      <div class="hero-profile-img">
+        <img src="Profile-photo.jpg" alt="Geoff Allix Profile">
+      </div>
+      
       <p class="hero-eyebrow">Technical Writer · Content Creator · Trainer</p>
       <h1 class="hero-name">Geoff<br><em>Allix</em></h1>
       <p class="hero-tagline">Making complex technology clear, compelling and actionable — for over 30 years.</p>
